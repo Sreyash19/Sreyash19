@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo img {
+
+    height: 40px;
+    margin: 2px 40px;
+    border-radius: 50px;
+
+}
+
+#navbar {
+    display: flex;
+    background-color: black;
+    opacity: 0.5;
+    top: 0px;
+    position: sticky;
+    justify-content: center;
+
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0px;
+}
+
+#navbar ul li {
+    list-style: none;
+    
+}
+
+#navbar ul li a {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    display: block;
+    font-size: 15px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    height: 100vh;
+    width: 100wh;
+}
+
+#home::before {
+    content: "";
+    background: url('/F1 Project/image/phonebg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100wh;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home p {
+    width: 300px;
+    margin-top: -342px;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 15px;
+     
+}
+
+#drivers {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+     
+    font-size: 22px;
+    margin-bottom: 35px;
+    
+}
+
+#wholecard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+#cards {
+    
+    transform: scale(0.7,0.7);
+    display: block;
+    min-width: 410px;
+    max-width: 460px;
+    border: 2px solid grey;
+    padding-bottom:-90px ;
+    border-radius: 28px;
+    box-shadow: 7px 7px 20px 7px grey, -7px -7px 20px 7px grey;
+    background-color: rgb(252, 252, 252);
+    height: 860px;
+}
+#cards:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+} 
+#cards img {
+    width: 411px;
+    height: 380px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#cards h2 {
+    text-align: center;
+    margin: 15px 20px;
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+
+#cards #info {
+    font-size: 18px;
+    margin: 8px;
+    font-family: 'Comfortaa', cursive;
+    text-align: left;
+    line-height: 35px;
+    margin-bottom: 42px;
+}
+
+
+#cards #button a {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    padding: 7px 12px;
+    font-size: 20px;
+    border: 2px solid red;
+    border-radius: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgb(241, 53, 53);
+
+}
+
+#cards #button a:hover {
+    border: 2px solid red;
+    background-color: white;
+    color: grey;
+}
+
+
+#teams-section  h1{
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 45px;
+    margin-top: 70px;
+    
+}
+
+#wholeteam{
+    display: grid;
+    justify-content: center;
+    padding: 29px;
+    grid-template-columns: 1fr;
+    margin: 21px;
+}
+
+#teams-section::before{
+    content: "";
+    position: absolute;
+    background: url("../image/phonebg1.jpg ") no-repeat center center/cover;
+    width: 100%;
+    height: 215%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    
+}
+#teamswilliams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    
+}
+#teams img{
+    margin-top: 3px;
+    height: 90px;
+    padding: 15px;
+     
+}
+#teamswilliams img{
+    margin-top: 3px;
+    height: 180px;
+    padding: 15px;
+    
+}
+#foot #footer_content{
+    display: block;
+    background-color: rgb(41, 41, 41);
+    padding: 100px;
+}
+#foot #subscribe{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin: auto;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+     
+}
+#foot #news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    padding: 15px;
+}
+#foot #news input {
+    font-size: 15px;
+    padding: 8px;
+    width: 150px;
+    border-radius: 50px;
+    border: 2px solid white;
+     
+}
+#foot #news button{
+    font-size: 10px;
+    padding: 5px;
+    width: 80px;
+    border-radius: 50px;
+    
+    background-color: red;
+    color: white;
+}
+#foot #news button:hover{
+    border: 2px solid red;
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+}
+#foot #follow_us{
+    margin-top: -40px;
+    background-color: black;
+    padding: 20px;
+     
+}
+#foot #follow_us h2{
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    color: white;
+}
+#foot #follow_us li a{
+    color: black;
+}
+#foot #follow_us #contact{
+    display: flex;
+    justify-content: center;
+     
+}
+#foot #follow_us img{
+    padding: 10px;
+    height: 30px;
+
+}
+#foot #follow_us p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+
+}

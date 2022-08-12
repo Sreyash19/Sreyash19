@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo img {
+
+    height: 90px;
+    margin: 4px 7px;
+    border-radius: 50px;
+
+}
+
+#navbar {
+    display: flex;
+    background-color: black;
+    opacity: 0.5;
+    top: 0px;
+    position: sticky;
+    justify-content: center;
+
+}
+
+#navbar ul {
+    display: flex;
+    margin: auto;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    display: block;
+    font-size: 25px;
+    padding: 30px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100wh;
+}
+
+#home::before {
+    content: "";
+    background: url('/F1 Project/image/bg11.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home p {
+    margin-top: 70px;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 35px;
+}
+
+#drivers {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 45px;
+}
+
+#wholecard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+#cards {
+    display: block;
+    min-width: 410px;
+    max-width: 460px;
+    border: 2px solid grey;
+    margin: 10px;
+    border-radius: 28px;
+    box-shadow: 7px 7px 20px 7px grey, -7px -7px 20px 7px grey;
+    background-color: rgb(252, 252, 252);
+    margin: auto;
+    height: 815px;
+}
+#cards:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+} 
+#cards img {
+    width: 411px;
+    height: 380px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#cards h2 {
+    text-align: center;
+    margin: 15px 20px;
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+
+#cards #info {
+    font-size: 18px;
+    margin: 8px;
+    font-family: 'Comfortaa', cursive;
+    text-align: left;
+    line-height: 35px;
+    margin-bottom: 42px;
+}
+
+
+#cards #button a {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    padding: 7px 12px;
+    font-size: 20px;
+    border: 2px solid red;
+    border-radius: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgb(241, 53, 53);
+
+}
+
+#cards #button a:hover {
+    border: 2px solid red;
+    background-color: white;
+    color: grey;
+}
+
+
+#teams-section  h1{
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 45px;
+    margin-top: 70px;
+}
+
+#wholeteam{
+    display: grid;
+    justify-content: center;
+    padding: 29px;
+    grid-template-columns: repeat(3,1fr);
+    margin: 21px;
+}
+
+#teams-section::before{
+    content: "";
+    position: absolute;
+    background: url("image/bg2.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 130%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+    
+}
+#teams img{
+    margin-top: 3px;
+    height: 120px;
+    padding: 25px;
+    
+    
+}
+
+#foot #footer_content{
+    display: flex;
+    background-color: rgb(41, 41, 41);
+    padding: 100px;
+}
+#foot #subscribe{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin: auto;
+    color: white;
+    text-transform: uppercase;
+}
+#foot #news{
+    margin: auto;
+    padding: 25px;
+}
+#foot #news input {
+    font-size: 20px;
+    padding: 15px;
+    width: 400px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+#foot #news button{
+    font-size: 20px;
+    padding: 15px;
+    width: 100px;
+    border-radius: 50px;
+    
+    background-color: red;
+    color: white;
+}
+#foot #news button:hover{
+    border: 2px solid red;
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+}
+#foot #follow_us{
+    margin-top: -71px;
+    background-color: black;
+    padding: 20px;
+}
+#foot #follow_us h2{
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 45px;
+    margin-top: 70px;
+    color: white;
+}
+#foot #follow_us li a{
+    color: black;
+}
+#foot #follow_us #contact{
+    display: flex;
+    justify-content: center;
+     
+}
+#foot #follow_us img{
+    padding: 20px;
+    height: 90px;
+
+}
+#foot #follow_us p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+
+}
